@@ -1,0 +1,1 @@
+-- Initial migration placeholder. Run prisma migrate dev to generate provider-specific SQL.

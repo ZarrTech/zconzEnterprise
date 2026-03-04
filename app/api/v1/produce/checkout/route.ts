@@ -1,0 +1,2 @@
+import { db } from '@/lib/db';import { resOk } from '@/lib/api';import { reserveInventory } from '@/repositories/inventory.repository';
+export async function POST(){const user=await db.user.findFirst();const ref=`ZEC-ORD-${new Date().getFullYear()}-${String((await db.order.count())+1).padStart(6,'0')}`;const order=await db.order.create({data:{reference:ref,userId:user!.id,type:'PRODUCE',status:'PENDING_PAYMENT',total:1000}});const p=await db.product.findFirst();if(p) await reserveInventory(p.id,1);return resOk(order);}

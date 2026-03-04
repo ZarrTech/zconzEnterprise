@@ -1,0 +1,2 @@
+import { Badge, ShareLink, StatusStepper } from '@/ui';
+export default function Track({params}:{params:{trackingId:string}}){return <main className='section container'><h1 className='text-3xl mb-3'>Tracking {params.trackingId}</h1><Badge text='IN_TRANSIT'/><div className='my-4'><StatusStepper steps={['CREATED','PICKED_UP','IN_TRANSIT','DELIVERED']} current={2}/></div><ShareLink url={`https://zeconz.local/track/${params.trackingId}`}/></main>}

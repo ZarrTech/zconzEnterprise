@@ -1,0 +1,1 @@
+import { db } from '@/lib/db';import { resOk } from '@/lib/api';export async function PATCH(req:Request,{params}:{params:{productId:string}}){const b=await req.json();return resOk(await db.inventory.update({where:{productId:params.productId},data:b}));}

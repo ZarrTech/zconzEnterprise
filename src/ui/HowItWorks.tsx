@@ -1,0 +1,1 @@
+export const HowItWorks=({steps}:{steps:string[]})=><ol className='grid md:grid-cols-3 gap-4'>{steps.map((s,i)=><li key={s} className='p-4 bg-card2 rounded-card border border-borderGold/50'><b>{i+1}.</b> {s}</li>)}</ol>;

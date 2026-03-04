@@ -1,0 +1,1 @@
+'use client';export const ShareLink=({url}:{url:string})=><button onClick={()=>navigator.clipboard.writeText(url)} className='px-3 py-2 rounded-pill border border-borderGold'>Copy tracking link</button>;

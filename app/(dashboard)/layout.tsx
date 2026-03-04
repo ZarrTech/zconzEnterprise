@@ -1,0 +1,2 @@
+import { ReactNode } from 'react';import Link from 'next/link';
+export default function Layout({children}:{children:ReactNode}){return <main className='container py-8 grid md:grid-cols-[220px_1fr] gap-6'><aside className='space-y-2'>{['/dashboard','/dashboard/shipments','/dashboard/produce','/dashboard/orders','/dashboard/crypto','/dashboard/support','/dashboard/settings'].map(i=><Link key={i} href={i} className='block p-2 rounded-input bg-card'>{i.split('/').pop()||'overview'}</Link>)}</aside><section>{children}</section></main>}

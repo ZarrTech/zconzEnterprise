@@ -1,0 +1,2 @@
+import { parseBody,resErr,resOk } from '@/lib/api';import { paymentInitSchema } from '@/lib/validation';import { PaymentService } from '@/services/payment.service';
+export async function POST(req:Request){try{const b=await parseBody(req,paymentInitSchema);return resOk(await PaymentService.initializePayment(b.orderReference,b.provider as any,b.returnUrl));}catch(e){return resErr('PAYMENT_INIT_FAILED','Unable to initialize payment',String(e));}}

@@ -1,0 +1,2 @@
+import { db } from '@/lib/db';import bcrypt from 'bcryptjs';import { parseBody,resErr,resOk } from '@/lib/api';import { registerSchema } from '@/lib/validation';
+export async function POST(req:Request){try{const body=await parseBody(req,registerSchema);const user=await db.user.create({data:{email:body.email,passwordHash:await bcrypt.hash(body.password,10)}});return resOk({id:user.id,email:user.email});}catch(e){return resErr('REGISTER_FAILED','Unable to register',String(e));}}

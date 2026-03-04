@@ -1,0 +1,1 @@
+import { StatusStepper } from '@/ui';export default function Page({params}:{params:{reference:string}}){return <div><h1>{params.reference}</h1><StatusStepper steps={['CREATED','PENDING_REVIEW','COMPLETED']} current={1}/><p className='mt-3 text-warning'>No custody. Desk-only workflow.</p></div>}

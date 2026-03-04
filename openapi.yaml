@@ -1,0 +1,818 @@
+openapi: 3.0.3
+info:
+  title: Zeconz Enterprises API
+  version: 1.0.0
+servers:
+  - url: /api/v1
+paths:
+  /auth/register:
+    post:
+      summary: POST /auth/register
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /auth/login:
+    post:
+      summary: POST /auth/login
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /auth/logout:
+    post:
+      summary: POST /auth/logout
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /me:
+    get:
+      summary: GET /me
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+    patch:
+      summary: PATCH /me
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /me/addresses:
+    get:
+      summary: GET /me/addresses
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+    post:
+      summary: POST /me/addresses
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /me/addresses/{id}:
+    patch:
+      summary: PATCH /me/addresses/{id}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+    delete:
+      summary: DELETE /me/addresses/{id}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /content/home:
+    get:
+      summary: GET /content/home
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /reviews:
+    get:
+      summary: GET /reviews
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /newsletter/subscribe:
+    post:
+      summary: POST /newsletter/subscribe
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /contact:
+    post:
+      summary: POST /contact
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /shipments:
+    get:
+      summary: GET /shipments
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+    post:
+      summary: POST /shipments
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /shipments/{trackingId}:
+    get:
+      summary: GET /shipments/{trackingId}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /track/{trackingId}:
+    get:
+      summary: GET /track/{trackingId}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /produce/products:
+    get:
+      summary: GET /produce/products
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /produce/products/{id}:
+    get:
+      summary: GET /produce/products/{id}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /cart/items:
+    get:
+      summary: GET /cart/items
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+    post:
+      summary: POST /cart/items
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /cart/items/{id}:
+    patch:
+      summary: PATCH /cart/items/{id}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+    delete:
+      summary: DELETE /cart/items/{id}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /produce/checkout:
+    post:
+      summary: POST /produce/checkout
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /orders:
+    get:
+      summary: GET /orders
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /orders/{reference}:
+    get:
+      summary: GET /orders/{reference}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /crypto/tickets:
+    get:
+      summary: GET /crypto/tickets
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+    post:
+      summary: POST /crypto/tickets
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /crypto/tickets/{reference}:
+    get:
+      summary: GET /crypto/tickets/{reference}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /crypto/tickets/{reference}/messages:
+    post:
+      summary: POST /crypto/tickets/{reference}/messages
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /payments/initialize:
+    post:
+      summary: POST /payments/initialize
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /payments/verify:
+    get:
+      summary: GET /payments/verify
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /webhooks/paystack:
+    post:
+      summary: POST /webhooks/paystack
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /webhooks/flutterwave:
+    post:
+      summary: POST /webhooks/flutterwave
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /tickets:
+    get:
+      summary: GET /tickets
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+    post:
+      summary: POST /tickets
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /tickets/{id}:
+    get:
+      summary: GET /tickets/{id}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /tickets/{id}/messages:
+    post:
+      summary: POST /tickets/{id}/messages
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/metrics/kpis:
+    get:
+      summary: GET /admin/metrics/kpis
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/orders:
+    get:
+      summary: GET /admin/orders
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/payments:
+    get:
+      summary: GET /admin/payments
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/refunds:
+    post:
+      summary: POST /admin/refunds
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/shipments:
+    get:
+      summary: GET /admin/shipments
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/shipments/{trackingId}/status:
+    patch:
+      summary: PATCH /admin/shipments/{trackingId}/status
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/shipments/{trackingId}/pod:
+    post:
+      summary: POST /admin/shipments/{trackingId}/pod
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/shipments/{trackingId}/assign:
+    post:
+      summary: POST /admin/shipments/{trackingId}/assign
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/produce/products:
+    get:
+      summary: GET /admin/produce/products
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+    post:
+      summary: POST /admin/produce/products
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/produce/products/{id}:
+    patch:
+      summary: PATCH /admin/produce/products/{id}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/inventory/{productId}:
+    patch:
+      summary: PATCH /admin/inventory/{productId}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/crypto/tickets:
+    get:
+      summary: GET /admin/crypto/tickets
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/crypto/tickets/{reference}/status:
+    patch:
+      summary: PATCH /admin/crypto/tickets/{reference}/status
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/crypto/tickets/{reference}/message:
+    post:
+      summary: POST /admin/crypto/tickets/{reference}/message
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/tickets:
+    get:
+      summary: GET /admin/tickets
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/tickets/{id}/messages:
+    post:
+      summary: POST /admin/tickets/{id}/messages
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/audit-logs:
+    get:
+      summary: GET /admin/audit-logs
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+  /admin/reviews/{id}:
+    patch:
+      summary: PATCH /admin/reviews/{id}
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+              example:
+                ok: true
+                data: { message: success }
+                meta: { requestId: req-123 }
+components:
+  schemas:
+    SuccessResponse:
+      type: object
+      properties:
+        ok: { type: boolean, example: true }
+        data: { type: object }
+        meta:
+          type: object
+          properties:
+            requestId: { type: string }
+    ErrorResponse:
+      type: object
+      properties:
+        ok: { type: boolean, example: false }
+        error:
+          type: object
+          properties:
+            code: { type: string }
+            message: { type: string }
+            details: { type: object }
+        meta: { type: object }

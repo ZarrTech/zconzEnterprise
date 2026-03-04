@@ -1,0 +1,1 @@
+export const FeatureGrid=({items}:{items:string[]})=><div className='grid md:grid-cols-3 gap-4'>{items.map(i=><div key={i} className='p-4 bg-card rounded-card border border-borderGold/50'>{i}</div>)}</div>;

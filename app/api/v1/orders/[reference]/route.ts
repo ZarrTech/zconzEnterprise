@@ -1,0 +1,1 @@
+import { db } from '@/lib/db';import { resOk } from '@/lib/api';export async function GET(_:Request,{params}:{params:{reference:string}}){return resOk(await db.order.findUnique({where:{reference:params.reference},include:{items:true,payment:true,shipment:true}}));}

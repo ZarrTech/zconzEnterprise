@@ -1,0 +1,1 @@
+export const CTASection=({title}:{title:string})=><section className='section'><div className='container p-8 rounded-card bg-card shadow-gold border border-borderGold'><h2 className='text-2xl'>{title}</h2></div></section>;

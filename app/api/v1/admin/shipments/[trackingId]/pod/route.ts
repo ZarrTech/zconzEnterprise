@@ -1,0 +1,2 @@
+import { db } from '@/lib/db';import { resOk } from '@/lib/api';
+export async function POST(req:Request,{params}:{params:{trackingId:string}}){const b=await req.json();const s=await db.shipment.findUniqueOrThrow({where:{trackingId:params.trackingId}});return resOk(await db.proofOfDelivery.upsert({where:{shipmentId:s.id},update:{imageUrl:b.imageUrl},create:{shipmentId:s.id,imageUrl:b.imageUrl}}));}

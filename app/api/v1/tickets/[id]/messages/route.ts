@@ -1,0 +1,1 @@
+import { db } from '@/lib/db';import { resOk } from '@/lib/api';export async function POST(req:Request,{params}:{params:{id:string}}){const b=await req.json();return resOk(await db.ticketMessage.create({data:{supportTicketId:params.id,senderRole:'CUSTOMER',message:b.message}}));}
