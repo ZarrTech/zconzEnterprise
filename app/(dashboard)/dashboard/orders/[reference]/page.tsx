@@ -1,0 +1,1 @@
+import { ReceiptCard } from '@/ui';export default function Page({params}:{params:{reference:string}}){return <div><h1>Order {params.reference}</h1><ReceiptCard reference={params.reference} total={15000}/></div>}

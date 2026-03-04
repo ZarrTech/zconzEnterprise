@@ -1,0 +1,1 @@
+import { db } from '@/lib/db';import { resOk } from '@/lib/api';export async function POST(req:Request){const b=await req.json();const refund=await db.refund.create({data:{paymentId:b.paymentId,amount:b.amount,reason:b.reason}});await db.payment.update({where:{id:b.paymentId},data:{status:'REFUNDED'}});return resOk(refund);}

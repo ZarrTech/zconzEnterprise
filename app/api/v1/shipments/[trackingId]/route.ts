@@ -1,0 +1,1 @@
+import { db } from '@/lib/db';import { resOk } from '@/lib/api';export async function GET(_:Request,{params}:{params:{trackingId:string}}){return resOk(await db.shipment.findUnique({where:{trackingId:params.trackingId},include:{events:true,pod:true}}));}

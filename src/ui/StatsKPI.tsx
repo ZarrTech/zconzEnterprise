@@ -1,0 +1,1 @@
+export const StatsKPI=({label,value}:{label:string;value:string})=><div className='p-4 rounded-card bg-card'><div className='text-2xl font-bold'>{value}</div><div className='text-muted'>{label}</div></div>;

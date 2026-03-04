@@ -1,0 +1,1 @@
+import { db } from '@/lib/db';import { resOk } from '@/lib/api';export async function GET(_:Request,{params}:{params:{id:string}}){return resOk(await db.product.findUnique({where:{id:params.id},include:{images:true,inventory:true}}));}

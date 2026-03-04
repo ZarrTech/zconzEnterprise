@@ -1,0 +1,2 @@
+import { ActivityFeed, StatsKPI } from '@/ui';
+export default function Page(){return <div><h1 className='text-3xl mb-4'>Dashboard</h1><div className='grid md:grid-cols-3 gap-4'><StatsKPI label='Shipments' value='3'/><StatsKPI label='Orders' value='2'/><StatsKPI label='Crypto' value='2'/></div><div className='mt-6'><ActivityFeed items={['Shipment created','Order processing','Crypto ticket pending review']}/></div></div>}

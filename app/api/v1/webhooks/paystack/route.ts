@@ -1,0 +1,2 @@
+import { PaymentService } from '@/services/payment.service';import { resErr,resOk } from '@/lib/api';import { webhooksQueue } from '@/queues';
+export async function POST(req:Request){const raw=await req.text();try{const r=await PaymentService.handleWebhook('PAYSTACK',req.headers,raw);await webhooksQueue.add('paystack',r);return resOk({received:true,...r});}catch(e){return resErr('WEBHOOK_INVALID','Invalid webhook',String(e),400);}}

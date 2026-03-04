@@ -1,0 +1,1 @@
+import { db } from '@/lib/db';import { resOk } from '@/lib/api';export async function POST(req:Request,{params}:{params:{reference:string}}){const b=await req.json();const t=await db.cryptoTicket.findUniqueOrThrow({where:{reference:params.reference}});return resOk(await db.ticketMessage.create({data:{cryptoTicketId:t.id,senderRole:'ADMIN',message:b.message}}));}
