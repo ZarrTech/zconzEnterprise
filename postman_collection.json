@@ -1,0 +1,1341 @@
+{
+  "info": {
+    "name": "Zeconz Enterprises API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST /auth/register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/auth/register",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /auth/login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/auth/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /auth/logout",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/auth/logout",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "auth",
+            "logout"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /me",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/me",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /me",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/me",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /me/addresses",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/me/addresses",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "me",
+            "addresses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /me/addresses",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/me/addresses",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "me",
+            "addresses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /me/addresses/{id}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/me/addresses/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "me",
+            "addresses",
+            "{id}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /me/addresses/{id}",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/me/addresses/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "me",
+            "addresses",
+            "{id}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /content/home",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/content/home",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "content",
+            "home"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /reviews",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/reviews",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "reviews"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /newsletter/subscribe",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/newsletter/subscribe",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "newsletter",
+            "subscribe"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /contact",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/contact",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "contact"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /shipments",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/shipments",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "shipments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /shipments",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/shipments",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "shipments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /shipments/{trackingId}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/shipments/{trackingId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "shipments",
+            "{trackingId}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /track/{trackingId}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/track/{trackingId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "track",
+            "{trackingId}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /produce/products",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/produce/products",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "produce",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /produce/products/{id}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/produce/products/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "produce",
+            "products",
+            "{id}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /cart/items",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/cart/items",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart",
+            "items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /cart/items",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/cart/items",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart",
+            "items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /cart/items/{id}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/cart/items/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart",
+            "items",
+            "{id}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /cart/items/{id}",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/cart/items/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "cart",
+            "items",
+            "{id}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /produce/checkout",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/produce/checkout",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "produce",
+            "checkout"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /orders",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/orders",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /orders/{reference}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/orders/{reference}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders",
+            "{reference}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /crypto/tickets",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/crypto/tickets",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "crypto",
+            "tickets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /crypto/tickets",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/crypto/tickets",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "crypto",
+            "tickets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /crypto/tickets/{reference}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/crypto/tickets/{reference}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "crypto",
+            "tickets",
+            "{reference}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /crypto/tickets/{reference}/messages",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/crypto/tickets/{reference}/messages",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "crypto",
+            "tickets",
+            "{reference}",
+            "messages"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /payments/initialize",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/payments/initialize",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "payments",
+            "initialize"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /payments/verify",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/payments/verify",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "payments",
+            "verify"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /webhooks/paystack",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/webhooks/paystack",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "webhooks",
+            "paystack"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /webhooks/flutterwave",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/webhooks/flutterwave",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "webhooks",
+            "flutterwave"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /tickets",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/tickets",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "tickets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /tickets",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/tickets",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "tickets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /tickets/{id}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/tickets/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "tickets",
+            "{id}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /tickets/{id}/messages",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/tickets/{id}/messages",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "tickets",
+            "{id}",
+            "messages"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /admin/metrics/kpis",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/metrics/kpis",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "metrics",
+            "kpis"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /admin/orders",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/orders",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /admin/payments",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/payments",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "payments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /admin/refunds",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/refunds",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "refunds"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /admin/shipments",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/shipments",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "shipments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /admin/shipments/{trackingId}/status",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/shipments/{trackingId}/status",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "shipments",
+            "{trackingId}",
+            "status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /admin/shipments/{trackingId}/pod",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/shipments/{trackingId}/pod",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "shipments",
+            "{trackingId}",
+            "pod"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /admin/shipments/{trackingId}/assign",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/shipments/{trackingId}/assign",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "shipments",
+            "{trackingId}",
+            "assign"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /admin/produce/products",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/produce/products",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "produce",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /admin/produce/products",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/produce/products",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "produce",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /admin/produce/products/{id}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/produce/products/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "produce",
+            "products",
+            "{id}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /admin/inventory/{productId}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/inventory/{productId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "inventory",
+            "{productId}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /admin/crypto/tickets",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/crypto/tickets",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "crypto",
+            "tickets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /admin/crypto/tickets/{reference}/status",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/crypto/tickets/{reference}/status",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "crypto",
+            "tickets",
+            "{reference}",
+            "status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /admin/crypto/tickets/{reference}/message",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/crypto/tickets/{reference}/message",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "crypto",
+            "tickets",
+            "{reference}",
+            "message"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /admin/tickets",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/tickets",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "tickets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /admin/tickets/{id}/messages",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/tickets/{id}/messages",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "tickets",
+            "{id}",
+            "messages"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /admin/audit-logs",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/audit-logs",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "audit-logs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH /admin/reviews/{id}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/reviews/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "reviews",
+            "{id}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

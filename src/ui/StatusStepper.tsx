@@ -1,0 +1,1 @@
+export const StatusStepper=({steps,current}:{steps:string[];current:number})=><div className='flex gap-2 flex-wrap'>{steps.map((s,i)=><div key={s} className={`px-3 py-1 rounded-pill ${i<=current?'bg-gold text-black':'bg-card2'}`}>{s}</div>)}</div>;

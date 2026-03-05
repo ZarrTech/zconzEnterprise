@@ -1,0 +1,1 @@
+import { ReceiptCard, ShareLink, StatusStepper } from '@/ui';export default function Page({params}:{params:{trackingId:string}}){return <div><h1>{params.trackingId}</h1><StatusStepper steps={['CREATED','IN_TRANSIT','DELIVERED']} current={1}/><ReceiptCard reference={params.trackingId} total={20000}/><ShareLink url={params.trackingId}/></div>}

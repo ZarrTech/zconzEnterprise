@@ -1,0 +1,1 @@
+import { db } from '@/lib/db';import { resOk } from '@/lib/api';export async function POST(req:Request){const user=await db.user.findFirst();const b=await req.json();return resOk(await db.supportTicket.create({data:{userId:user!.id,subject:b.subject,status:'CREATED'}}));} export async function GET(){return resOk(await db.supportTicket.findMany({include:{messages:true}}));}

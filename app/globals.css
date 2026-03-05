@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:#0B0B10;
+  --bg2:#070709;
+  --card:#141420;
+  --card2:#1A1A22;
+  --text:#F3F4F6;
+  --muted:#A1A1AA;
+  --gold:#F5C400;
+  --goldHover:#FFD54A;
+  --border:rgba(245,196,0,0.25);
+  --danger:#EF4444;
+  --success:#22C55E;
+  --warning:#F59E0B;
+}
+
+@layer base {
+  * { @apply border-borderGold/20; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    color: var(--text);
+    background:
+      radial-gradient(circle at 10% 10%, rgba(245,196,0,0.08) 0%, transparent 35%),
+      radial-gradient(circle at 80% 0%, rgba(115,84,255,0.12) 0%, transparent 40%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+    font-family: Inter, system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .container { max-width: 1200px; margin: 0 auto; padding-inline: 1rem; }
+  .section { padding-block: 72px; }
+  .premium-card {
+    @apply rounded-card border border-borderGold/30 bg-card/80 shadow-card backdrop-blur-sm;
+  }
+}
+
+@media (max-width: 768px) {
+  .section { padding-block: 48px; }
+}
+
+button, a, input, textarea, select { transition: all .18s ease; }
+
+:focus-visible {
+  outline: 2px solid rgba(245,196,0,0.4);
+  outline-offset: 2px;
+}

@@ -1,0 +1,1 @@
+export const DataTable=({rows}:{rows:any[]})=><table className='w-full'><tbody>{rows.map((r,i)=><tr key={i}><td className='p-2 border-b border-borderGold/30'>{JSON.stringify(r)}</td></tr>)}</tbody></table>;
